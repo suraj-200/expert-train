@@ -1,0 +1,340 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: quicksand;
+    text-decoration: none;
+    list-style: none;
+}
+
+::-webkit-scrollbar{
+    width: 5px;
+}
+::-webkit-scrollbar-thumb{
+    background: #3e6015;
+    border-radius: 2.5px;
+}
+.container{
+    width: 100%;
+    height: 100%;
+    padding: 0 10vw;
+    cursor: default;
+}
+
+
+/** Menubar **/
+.menubar{
+    display: flex;
+    position: relative;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    flex: 1;
+}
+.logo img{
+    height: 25px;
+    margin-right: 10px;
+}
+.logo h2 a{
+    font-family: "Gloucester MT Extra Condensed";
+    color: #3e6015;
+}
+ul{
+    display: flex;
+    align-items: right;
+    font-size: 0.8em;
+}
+ul a{
+    color: #3e6015;
+    margin-left: 10px;
+}
+ul a:hover, .active{
+    color: #5eff00;
+}
+
+.menubar button{
+    display: none;
+    background: none;
+    border: none;
+}
+
+
+
+/** Main section **/
+.main{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+.main h1{
+    font-size: 3em;
+    color: #3e6015;
+    line-height: 2.8rem;
+    margin-bottom: 10px;
+}
+.main h1 b{
+    color: #5eff00;
+}
+.main button{
+    background: none;
+    border: none;
+    margin-top: 20px;
+    transition: 0.6s;
+}
+.main button a{
+    color: #3e6015;
+}
+.main button i{
+    margin-left: 0;
+    transition: 0.6s;
+}
+.main button:hover i{
+    margin-left: 10px;
+}
+.main img{
+    width: 36vw;
+    max-width: 300px;
+    min-width: 225px;
+    margin-left: 20px;
+    border-radius: 80px;
+}
+
+
+
+/** Second Menu **/
+.container>h2{
+    text-align: center;
+    margin-bottom: 25px;
+    color: #3e6015;
+    position: relative;
+}
+.container>h2::before{
+    content: "";
+    width: 40%;
+    height: 3px;
+    background: #5eff00;
+    position: absolute;
+    bottom: -5px;
+    right: 50%;
+    transform: translateX(50%);
+}
+.second-menu{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+.second-menu a{
+    width: 32%;
+    text-align: center;
+    border-radius: 20px;
+    padding: 25px 0;
+    color: #3e6015;
+}
+.second-menu img{
+    height: 100px;
+    border-radius: 30px;
+}
+.second-menu a:hover{
+    box-shadow: 0px 0px 5px #707070;
+}
+
+
+/** Third Menu **/
+.third-menu{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+.third-menu section{
+    width: 120px;
+    flex-shrink: 0;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.third-menu section img{
+    height: 100px;
+    border: 3px solid #3e6015;
+    border-radius: 30px;
+}
+.third-menu section img:hover{
+    box-shadow: 0px 0px 8px #5eff00;
+}
+
+
+
+/** What Makes Us Better **/
+.wmub{
+    display: flex;
+    margin: 50px 0;
+}
+.wmub>section:first-child{
+    width: 55%;
+    flex: 1;
+}
+.sec-text div{
+    display: flex;
+    margin-bottom: 20px;
+}
+.sec-text div section:first-child{
+    width: 50px;
+    height: 50px;
+    flex-shrink: 0;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.sec-text div:nth-child(1) section:first-child{
+    background-image: url(../images/Background\ \(10\).jpg);
+    background-size: cover;
+}
+.sec-text div:nth-child(2) section:first-child{
+    background-image: url(../images/Background\ \(6\).jpg);
+    background-size: cover;
+}
+.sec-text div:nth-child(3) section:first-child{
+    background-image: url(../images/Background\ \(4\).jpg);
+    background-size: cover;
+}
+.sec-text div:nth-child(4) section:first-child{
+    background-image: url(../images/Background\ \(2\).jpg);
+    background-size: cover;
+}
+.sec-text h4{
+    color: #3e6015;
+}
+.sec-text p{
+    font-size: 0.8rem;
+    line-height: 12px;
+    width: 95%;
+}
+
+.wmub>section:last-child{
+    width: 40%;
+    height: auto;
+    background-image: url(../images/animal\ \(22\).jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+
+/** Footer **/
+footer{
+    width: 100%;
+    height: 200px;
+    padding: 0 10vw;
+    background: hsl(0, 0%, 44%);
+    text-align: center;
+}
+footer div i{
+    width: 50px;
+    color: #fff;
+    margin: 20px 0;
+}
+footer .pp{
+    display: flex;
+    flex-direction: column;
+}
+footer .pp a{
+    color: #fff;
+    text-align: left;
+    font-size: 0.8rem;
+    margin: 5px 0;
+}
+footer img{
+    height: 140px;
+    float: right;
+    position: relative;
+    top: 18px;
+    filter: grayscale(1);
+    opacity: 0.5;
+    margin-top: -35px;
+}
+footer p{
+    font-size: 0.7rem;
+    color: #fff;
+    margin-top: 20px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+
+@media (max-width: 600px){
+
+    #menu{
+        display: none;
+    }
+    ul{
+        background: #ff0000;
+        flex-direction: column;
+        position: absolute;
+        top: 30px;
+        right: 0;
+        padding: 10px;
+        border-radius: 10px;
+    }
+    ul li{
+        margin-top: 5px;
+        text-align: right;
+    }
+    ul a{
+        color: #9c9c9c;
+        margin: 0;
+    }
+
+    .menubar>button{
+        display: inline-block;
+    }
+
+    /** Main **/
+    .main{
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+    .main button:hover{
+        transform: translateX(5px);
+    }
+    .main img{
+        margin: 0 0 20px 0;
+    }
+
+    /** Secondary Menu **/
+    .second-menu{
+        flex-direction: column;
+        align-items: center;
+    }
+    .second-menu a{
+        width: 80%;
+    }
+
+    /** What Make Us Better **/
+    .wmub{
+        flex-direction: column-reverse;
+        flex-wrap: wrap;
+    }
+    .wmub>section:first-child{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .sec-text div{
+        width: 50%;
+        flex-direction: column;
+    }
+    .sec-text div section:first-child{
+        margin: 10px 0;
+    }
+    .sec-text p{
+        margin: 10px 0;
+    }
+    .wmub>section:last-child{
+        width: 100%;
+        height: 200px;
+        margin-bottom: 25px;
+    }
+}
